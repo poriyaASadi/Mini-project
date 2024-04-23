@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Task Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <div class="boxSwich">
+        Show box 
+    </div> -->
+    <div class="boxShow__add">
+        <div class="boxTitle">
+            <div class="title__header--add">Task details</div>
+            <div class="boxIcon__add">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon__close">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                  </svg>                  
+            </div>
+        </div>
+        <div class="boxSearch">
+            <span class="spanTitle__search">Task name</span>
+            <input type="text" placeholder="Add new title" id="searchInput">
+        </div>
+        <div class="box__description">
+            <span class="span__discription">Description</span>
+            <textarea name="" id="discription" cols="30" rows="10"   placeholder="Enter a short description"></textarea>
+        </div>
+        <div class="boxIcon__type">
+            <span class="span__type">Icon</span>
+            <div class="">
+                <ul class="ulList__type">
+                    <li>🧑‍💻</li>
+                    <li>💬</li>
+                    <li>☕</li>
+                    <li>🏋️‍♂️</li>
+                    <li>📚</li>
+                    <li>⏲️</li>
+                </ul>
+            </div>
+        </div>
+        <div class="boxStatus">
+            <span class="spanStatus">Status</span>
+            <div class="boxStatus__item">
+                <div class="boxSatus">
+                    <span class="icon__type icon__type__p">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z" />
+                          </svg>                          
+                    </span>
+                    <h4>In Progress</h4>
+                </div>
+                <div class="boxSatus">
+                    <span class="icon__type  icon__type__w">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                          </svg>          
+                    </span>
+                    <h4>Won`t do</h4>
+                </div>
+                <div class="boxSatus">
+                    <span class="icon__type  icon__type__c">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                          </svg>                          
+                    </span>
+                    <h4>Completed</h4>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="btn">save</button>
+    </div>
+    <div class="container">
+    
+      <div class="content"> 
+        <div class="title__header">
+            <h1>My Task Board 🎓</h1>
+            <p>Tasks to keep organised</p>
+          </div>
+        <div>
+            <ul class="parent__cart">
+                <li class="boxSwich">
+                    <div class="addNewCart">
+                        <span class="addCart__span">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                              </svg>                              
+                        </span>
+                        <p>Add new task</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="boxUser__add">
+                        <div class="boxUser__leftItem">
+                            <div class="boxIcon__type">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+                                  </svg>                                  
+                            </div>
+                            <div><p class="text__userType">Task Completed</p></div>
+                        </div>
+                        <div>
+                            <span class="icon__spanUser">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                                  </svg>  
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="boxUser__add boxUser__addR">
+                        <div class="boxUser__leftItem">
+                            <div class="boxIcon__type">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
+                                  </svg>                                                                   
+                            </div>
+                            <div><p class="text__userType">Task Wont`t Do</p></div>
+                        </div>
+                        <div>
+                            <span class="icon__spanUser icon__spanUserR">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                  </svg>    
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="boxUser__add boxUser__addY">
+                        <div class="boxUser__leftItem">
+                            <div class="boxIcon__type">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                  </svg>                                                                                                    
+                            </div>
+                            <div><p class="text__userType">Task Wont`t Do</p></div>
+                        </div>
+                        <div>
+                            <span class="icon__spanUser icon__spanUserY">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+                                  </svg>                                  
+                            </span>
+                        </div>   
+                    </div>
+                    <p class="discriptionUser">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia alias natus cupiditate itaque, repudiandae libero doloremque minima! Possimus, harum praesentium?</p>
+                </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+ <div class="lineDark"></div>
+    <script src="./main.js"></script>
+</body>
+</html>
