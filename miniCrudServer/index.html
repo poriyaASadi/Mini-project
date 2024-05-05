@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API ...</title>
+</head>
+<body style="background-color: #333;">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            border-radius: .5rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .section{
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+  <section>
+
+    <div style="margin: 1rem; padding: .5rem; background-color: aqua;">
+        <form action="" id="formGet">
+            <h2>GET USERS FOR LOGIN</h2>
+            <input style="padding: .3rem 1rem; border-radius: .5rem; border: none; margin-top: .5rem;" type="text" id="userGet" placeholder="userName">
+            <input style="padding: .3rem 1rem; border-radius: .5rem; border: none; margin-top: .5rem;" type="text" placeholder="password">
+            <button type="submit" style="padding: .3rem 1rem; border-radius: .5rem; border: none; cursor: pointer; font-weight: 500;">send</button>
+            <p class="pGet" style="padding: .5rem; font-weight: 500;"></p>
+        </form>
+    </div>
+<!--  ------------- -->
+    <div style="margin: 1rem; padding: .5rem; background-color: rgb(0, 255, 21);">
+        <form action="">
+            <h2>POST USERS FOR SING UP</h2>
+            <input style="padding: .3rem 1rem; border-radius: .5rem; border: none; margin-top: .5rem;" type="text" placeholder="userName">
+            <input style="padding: .3rem 1rem; border-radius: .5rem; border: none; margin-top: .5rem;" type="text" placeholder="password">
+            <button type="submit" style="padding: .3rem 1rem; border-radius: .5rem; border: none; cursor: pointer; font-weight: 500;">creat</button>
+        </form>
+    </div>/ 
+    <!-- ------------ -->
+    <div style="margin: 1rem; padding: .5rem; background-color: rgb(255, 0, 128);">
+        <form action="" class="formDelet">
+            <h2>DELET USERS FOR LOG OUT</h2>
+            <input style="padding: .3rem 1rem; border-radius: .5rem; border: none; margin-top: .5rem;" type="text" id="userid" placeholder="user id">
+            <button type="submit" style="padding: .3rem 1rem; border-radius: .5rem; border: none; cursor: pointer; font-weight: 500;">delet</button>
+            <p class="pDelet" style="padding: .5rem; font-weight: 500;"></p>
+        </form>
+    </div>
+
+  </section>
+
+  <script src="./main.js"></script>
+</body>
+</html>
